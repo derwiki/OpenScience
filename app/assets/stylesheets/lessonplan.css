@@ -1,3 +1,30 @@
-ol {
-  list-style-type: decimal;
+#content {
+  font-size: 16px;
+}
+#content iframe,img {
+  display: block;
+  margin: 0 auto;
+}
+#content .illustration {
+}
+#content .illustration img,div{
+  margin: 20px auto;
+}
+#content .illustration .description {
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  width: 500px;
+  margin: 0 auto;
+}
+#content ol {
+  padding: 10px;
+  margin: 10px;
+}
+#content li {
+  margin-bottom: 20px;
+}
+#content li span {
+  display: block;
+  clear: both;
 }

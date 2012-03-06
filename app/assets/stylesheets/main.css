@@ -17,7 +17,7 @@ table.table {border-collapse:collapse; border-spacing:0;}
 table.table th, table.table td {padding:7px 10px;}
 table.table th {font-weight:bold;}
 ul.ul {margin-left:20px; list-style:none;}
-ul.ul li {padding-left:15px; background:url("/assets//ul.gif") 0 5px no-repeat;}
+ul.ul li {padding-left:15px; background:url("/assets/ul.gif") 0 5px no-repeat;}
 ul.ul ul {margin:0 0 0 20px; list-style:none;}
 img.f-left {margin-right:15px;}
 img.f-right {margin-left:15px;}
@@ -27,7 +27,7 @@ LAYOUT
 -------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .main {width:960px; margin:0 auto;}
-#header {position:relative; height:140px; overflow:hidden; background:url("/assets//header.png") 50% 0 no-repeat;}
+#header {position:relative; height:140px; overflow:hidden; background:url("/assets/header.png") 50% 0 no-repeat;}
 #header #logo {position:absolute; top:40px; left:0; margin:0; font-size:350%; line-height:1; letter-spacing:-2px; font-weight:normal;}
 #header #logo span {font-weight:bold;}
 #header #nav {position:absolute; top:38px; right:0; list-style:none; font-size:110%;}
@@ -46,7 +46,7 @@ LAYOUT
 	.articles h2 {margin:0;}
 	.articles h2 a {text-decoration:none;}
 	.articles .article-info {padding-bottom:10px;}
-	.articles .article-info .comment {padding-left:18px; background:url("/assets//comment.gif") 0 50% no-repeat;}
+	.articles .article-info .comment {padding-left:18px; background:url("/assets/comment.gif") 0 50% no-repeat;}
 	.articles .article-info p {margin:0;}
 	.gallery li {display:block; float:left; margin-right:10px;}
 	.pagination {font-size:110%;}
