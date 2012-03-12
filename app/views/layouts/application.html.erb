@@ -27,7 +27,10 @@
   </div>
   <div id="section" class="box">
     <div id="content">
-      <%= yield -%>
+      <%= yield :content -%>
+    </div>
+    <div id="toc" class="box">
+      <%= yield :toc %>
     </div>
   </div>
 </div>

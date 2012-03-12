@@ -1,7 +1,14 @@
 #content {
   font-size: 16px;
 }
+#content .section {
+  display: none;
+}
+#content .section.selected {
+  display: block;
+}
 #content .illustration {
+  text-align: center;
 }
 #content .illustration img,div{
   margin: 20px auto;
@@ -23,4 +30,10 @@
 #content li span {
   display: block;
   clear: both;
+}
+#section-picker {
+  list-style-type: none;
+}
+#section-picker li:last-child {
+  padding-top: 20px;
 }

@@ -88,3 +88,10 @@ OTHERS
 .noscreen {display:none;}
 .input-text {padding:5px;}
 .input-submit {padding:3px;}
+
+/* */
+#toc {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 80px;
+}
