@@ -7,4 +7,7 @@ class LessonController < ApplicationController
 
   def electricity
   end
+
+  def authors
+  end
 end

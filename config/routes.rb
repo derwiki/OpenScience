@@ -1,6 +1,7 @@
 Openscience::Application.routes.draw do
   #get "default/show"
   root :to => 'lesson#show'
+  match 'authors' => 'lesson#authors'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

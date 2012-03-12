@@ -1,0 +1,29 @@
+<%= content_for :content do -%>
+  <ul id="authors">
+    <li>
+      <span class="author-image">
+        <%= image_tag "authors-ron.jpg", :class => "author" %>
+      </span>
+      <span class="author-bio">
+        <b>Ron Derewecki</b> earned his Bachelors from West Liberty State College and
+        went on to earn a Masters of Education from Penn State University. He taught
+        science in the Coshocton school district for over 30 years, including operating
+        the planetarium. During his time at Coshocton, he lead many science initiatives
+        including: science fairs, summer science camps, and Space City (a space
+        camp-like simulation for fourth graders, done on a budget).
+      </span>
+    </li>
+    <li>
+      <span class="author-image">
+        <%= image_tag "authors-adam.jpg", :class => "author" %>
+      </span>
+      <span class="author-bio">
+        <b>Adam Derewecki</b> (Ron's youngest son and former student) earned his
+        Bachelors in Computer Engineering from Case Western Reserve University.
+        Since graduating, he's worked at numerous software start-ups in San
+        Francisco. His passion for improving the state of the education system
+        drew him to this project.
+      </span>
+    </li>
+  </ul>
+<%- end -%>

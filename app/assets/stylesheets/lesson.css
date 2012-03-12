@@ -37,3 +37,19 @@
 #section-picker li:last-child {
   padding-top: 20px;
 }
+#authors li span {
+  display: inline-block;
+  position: absolute;
+}
+#authors li {
+  position: relative;
+  height: 278px;
+}
+.author-image {
+  width: 200px;
+}
+.author-bio {
+  left: 200px;
+  width: 450px;
+  padding-left: 10px;
+}
