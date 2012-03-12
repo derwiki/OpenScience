@@ -29,6 +29,7 @@ LAYOUT
 .main {width:960px; margin:0 auto;}
 #header {position:relative; height:140px; overflow:hidden; background:url("/assets/header.png") 50% 0 no-repeat;}
 #header #logo {position:absolute; top:40px; left:0; margin:0; font-size:350%; line-height:1; letter-spacing:-2px; font-weight:normal;}
+#header #logo a {color:#fff; text-decoration:none}
 #header #logo span {font-weight:bold;}
 #header #nav {position:absolute; top:38px; right:0; list-style:none; font-size:110%;}
 #header #nav li {display:inline;}
