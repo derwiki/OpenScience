@@ -11,3 +11,12 @@ $(function() {
     $('.section').show();
   });
 });
+
+$(function () {
+  var toc = $('#toc');
+  var top = toc.offset().top - parseFloat(toc.css('marginTop').replace(/auto/, 0));
+  $(window).scroll(function () {
+    var fun = ($(this).scrollTop() >= top) ? "addClass" : "removeClass"
+    $('#toc')[fun]('fixed');
+  });
+});

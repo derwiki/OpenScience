@@ -27,8 +27,12 @@
     <div id="content">
       <%= yield :content -%>
     </div>
-    <div id="toc" class="box">
-      <%= yield :toc %>
+    <div id="tocWrapper">
+      <div id="toc">
+        <form>
+          <%= yield :toc %>
+        </form>
+      </div>
     </div>
   </div>
 </div>

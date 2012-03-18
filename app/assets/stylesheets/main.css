@@ -90,9 +90,21 @@ OTHERS
 .input-text {padding:5px;}
 .input-submit {padding:3px;}
 
-/* */
+/* required to avoid jumping */
+#tocWrapper {
+  left: 850px;
+  position: absolute;
+  margin-left: 35px;
+  width: 280px;
+}
 #toc {
-  display: inline-block;
-  padding-left: 20px;
-  padding-top: 80px;
+  position: absolute;
+  top: 0;
+  /* just used to show how to include the margin in the effect */
+  margin-top: 20px;
+  padding-top: 19px;
+}
+#toc.fixed {
+  position: fixed;
+  top: 0;
 }
