@@ -5,6 +5,10 @@ class LessonController < ApplicationController
                    fruit_battery thermocouple)
   end
 
+  def matter
+    @sections = %w(all)
+  end
+
   def index
   end
 
