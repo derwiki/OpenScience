@@ -27,91 +27,103 @@ Matter: anything that occupies space and has mass
 <li><em>Compounds</em>
           - two or more elements combining in a definite ratio.<br/>
 		example:<br/>
-			<span>H + O &rarr; H20 (water)</span>
+			<span>H + O &rarr; H<sub>2</sub>O (water)</span>
 			<span>Na + Cl &rarr; NaCl (salt)</span>
 </li>
-</ul>
-<pre style="font-family: Helvetica;">
+</ol>
 
 <p>
 When they combine you get a new substance with new properties. Hydrogen (H) is a
 gas that is very explosive; Oxygen is a gas that is not explosive but makes
-things burn faster. Water is not a gas but a liquid and it doesn't explode and
-it puts out fires. The compound has its own properties.
+things burn faster. Water is not a gas but a liquid and it puts out fires rather
+than explode. The compound has its own properties.
 </p>
 	Molecule - two or more kinds of atoms can exist in free form
 
 			     NaCl       HCl 
 
   Some common elements and their symbol:
-	Hydrogen     H		Oxygen    O		Helium      He
-	Nitrogen     N		Sodium     Na	Magnesium Mg
-	Aluminum  Al		Boron       B		Silicon       Si
-	Phosphorous P  	         Sulfur        S		Chlorine    Cl
-	Potassium     K	         Calcium    Ca		Argon        Ar
-	Iron             Fe 	         Cobalt      Co		Nickel	       Ni
-	Copper        Cu	         Zinc          Zn		Silver       Ag
-	Gold            Au	         Mercury   Hg		Uranium   U
+<table>
+  <%- (1..15).each do |atomic_nr| -%>
+    <%- name, abbrev = ELEMENTS_BY_ATOMIC_NR[atomic_nr] -%>
+    <%= content_tag :tr, content_tag(:td, name) + content_tag(:td, abbrev) %>
+  <%- end -%>
+</table>
 
+<p>
 When you learn the symbols, it's important to learn them with the proper upper
-and lower case.  “C” is carbon; “O” is oxygen; when combined they can form “CO”
-carbon monoxide. But if you write “O” as “o”, it will look like this “Co” which
-is not carbon monoxide but it is the symbol for the element cobalt. These are
-symbols not abbreviation.
+and lower case.  "C" is carbon; "O" is oxygen; when combined they can form
+carbon monoxide ("CO"). But if you write "O" as "o", it will look like this "Co" which
+is not carbon monoxide -- it's the symbol for the element cobalt. These are
+symbols, not abbreviations.
+</p>
+<p>
+When you learn the symbols, it's important to learn them with the proper letter casing.
+</p>
 
 Atoms consists of:
+<ul>
+  <li>protons (p<sup>+</sup>)</li>
+  <li>neutrons (n<sup>0</sup>)</li>
+  <li>electrons (e<sup>-</sup>)</li>
+</ul>
 
-		
 
-
-The Plus(+) and Negative(-) signs on the protons and electrons are their charge.
+<p>The Positive (+) and Negative(-) signs on the protons and electrons are their charge.
 Think of the charge like you would of magnets. Like charges repel and unlike
-charges attract. The neutrons have no charge.
+charges attract. The neutrons have no charge.</p>
 
+<pre style="font-family: Helvetica;">
 
-
-
-
-
-
-
-
-
-Structure of an atom
+<h2>Structure of an atom</h2>
 There are several ways of drawing an atom:
 
-1. Bohr structure
-A physicist by the name of Neil Bohr drew the atom for his students that looked
+<ol>
+<li>
+  <div>Bohr structure</div>
+  <a href="http://en.wikipedia.org/wiki/File:Bohr-atom-PAR.svg">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bohr-atom-PAR.svg/200px-Bohr-atom-PAR.svg.png" />
+  </a>
+  <p>A physicist by the name of Niels Bohr drew the atom for his students that looked
 like the solar system. The nucleus was in the center with the electrons
-traveling around it like planets going around the sun. 
-
-				
-Some scientist criticized the drawing stating that it gave the impression that
-atoms are flat like a pancake. But in fact, they are 3 dimensional.
-
-2. Atomic Orbitals
-
-So atoms were drawn 3 dimensionally, like this drawing.
-				
-
-But there is a problem with this. Electrons travel at the speed of light
+traveling around it like planets going around the sun.</p>
+  <p>Some scientist criticized the drawing stating that it gave the impression that
+atoms are flat like a pancake. But in fact, they are 3 dimensional.</p>
+</li>
+<li>
+  <div>Atomic Orbitals</div>
+  <p>So atoms were drawn 3 dimensionally, like this drawing:</p>
+  <a href="http://en.wikipedia.org/wiki/File:D_orbitals.svg">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/D_orbitals.svg/500px-D_orbitals.svg.png" />
+  </a>
+<p>But there is a problem with this. Electrons travel at the speed of light
 (186,00miles per second). You can't pin point the exact spot where an electron
 is plus the fact that electrons move close toward the nucleus then move further
 away. Since you are just beginning to learn about the atom, this type of drawing
 makes it difficult to learn and understand about the various energy levels.
- 3. Electron Cloud
+</p>
+</li>
+<li>
+  <div>Electron Cloud</div>
+  <div>Since the electrons move so fast. and it's difficult to say where the electrons
+are at any given moment, they started to draw the atom as a cloud. </div>
 
-Since the electrons move so fast. and it's difficult to say where the electrons
-are at any given moment, they started to draw the atom as a cloud. 
+<div class="illustration">
+  <a href="http://en.wikipedia.org/wiki/File:HydrogenOrbitalsN6L0M0.png">
+    <%= image_tag "/assets/electricity/HydrogenOrbitalsN6L0M0.png" %>
+  </a>
+</div>
 
-                                         
+<p>                                         
 But again, since you are just beginning to learn about the atom and its parts,
-this drawing makes it difficult to understand the structure of the atom.
+this drawing makes it difficult to understand the structure of the atom.</p>
 
-Let me ask you a question. If the electrons are traveling at the speed of light,
+<p>Let me ask you a question. If the electrons are traveling at the speed of light,
 why don't they fly off into space? What is the charge of an electron and what is
 the charge of a proton in the nucleus? Can you now figure out why the electrons
-don't fly off into space?
+don't fly off into space?</p>
+</li>
+</ol>
 
  So in this section on matter, the atom will be drawn as the Bohr atom.     
 

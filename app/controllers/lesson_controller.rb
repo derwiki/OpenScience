@@ -6,6 +6,7 @@ class LessonController < ApplicationController
   end
 
   def matter
+    require 'lib/periodic' # for displaying
     @sections = %w(all)
   end
 
