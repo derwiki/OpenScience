@@ -1,6 +1,8 @@
 --- 
+matter/orbitals.png: matter/orbitals-9442d5a33f2821a808767af0ecb27f9a.png
 electricity/parallel-battery.png: electricity/parallel-battery-f4059d36b3b65c9b536b374f20f5bdd4.png
 authors-ron.jpg: authors-ron-4956062c611d6afdbe954c1992d2b647.jpg
+matter/electron-cloud.png: matter/electron-cloud-3146d701a475068fbf29c671eabf0f2f.png
 electricity/homemade-motor.png: electricity/homemade-motor-ba107cf8c5af386949fc2d4e1b3a5113.png
 comment.gif: comment-50ac49759d6f6d351701e0f48bb85a67.gif
 electricity/homemade-battery-step5.png: electricity/homemade-battery-step5-6f57b97b93a96ad64e18f6cb2e7840b2.png
@@ -13,13 +15,14 @@ footer.gif: footer-c9fe76fe1be7ef0c5e70261c966ad697.gif
 electricity/galvanometer.png: electricity/galvanometer-c611e799417316f5259f2474bf0b3f0e.png
 electricity/aluminum-wire.png: electricity/aluminum-wire-cdcb0dfb5078f2c0e2aa655061f0a2c3.png
 rails.png: rails-782b548cc1ba7f898cdad2d9eb8420d2.png
+matter/bohr-structure.png: matter/bohr-structure-a5bad52be2160249a69425cd17742ed6.png
 electricity/wired-house.png: electricity/wired-house-9a1e17387af30927fceb4b979368ba05.png
 electricity/light-switch.png: electricity/light-switch-985c66749aadac38695af4bf1770ed30.png
 electricity/insulators.png: electricity/insulators-d23604a4feb78dcaa13d18d00238d169.png
 electricity/homemade-battery-step2.png: electricity/homemade-battery-step2-d0768f52072ad489962354e00e6e24d3.png
 electricity/fruit-battery.png: electricity/fruit-battery-dd1d9d1ec0544b26dbf7a742ee6b5c0c.png
 electricity/HydrogenOrbitalsN6L0M0.png: electricity/HydrogenOrbitalsN6L0M0-5b7e1ab30cf51480fe69b98f9bff0784.png
-application.css: application-c2f5a8d0b6912fb8b8e953b86d0fe5d3.css
+application.css: application-39183a2320e087e0c6178eb4ec422d0b.css
 authors-adam.jpg: authors-adam-77fe65022195d68b96c31c8d06f8b08c.jpg
 electricity/thermocouple.png: electricity/thermocouple-319b4e28eb3fc31ebd53490374bac3df.png
 electricity/electromagnet.png: electricity/electromagnet-6c5c3887f2c8574606d27b280bfa891c.png

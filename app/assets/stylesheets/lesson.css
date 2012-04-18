@@ -10,8 +10,11 @@
 #content .illustration {
   text-align: center;
 }
-#content .illustration img,div{
+#content .illustration div {
   margin: 20px auto;
+}
+#content img.illustration {
+  max-width: 400px;
 }
 #content .illustration .description {
   font-size: 14px;
