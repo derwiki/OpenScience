@@ -73,8 +73,6 @@ Atoms consists of:
 Think of the charge like you would of magnets. Like charges repel and unlike
 charges attract. The neutrons have no charge.</p>
 
-<pre style="font-family: Helvetica;">
-
 <h2>Structure of an atom</h2>
 There are several ways of drawing an atom:
 
@@ -119,11 +117,15 @@ don't fly off into space?</p>
 </li>
 </ol>
 
- So in this section on matter, the atom will be drawn as the Bohr atom.     
+<p>
+So in this section on matter, the atom will be drawn as the Bohr atom.
+</p>
 
+<div class="illustration">
+  <%= image_tag 'matter/energy-levels.png', :class => :illustration  %>
+</div>
 
-
-In the atom the protons and neutrons are located in the nucleus. The electrons
+<p>In the atom the protons and neutrons are located in the nucleus. The electrons
 are located in rings or what are called energy levels. The energy levels are
 called: 1st energy level, 2nd energy level, 3rd energy level and so forth. Each
 energy level can contain only a certain number of electrons. Learning how many
@@ -132,12 +134,11 @@ So we are going to work with 21 electrons or less so we can get an understanding
 of the distribution of electrons and how electrons can be transferred to other
 atoms in forming compounds. To understand the distribution for a large number of
 the electrons completely, you will need to take a course in chemistry.
+</p>
 
-To distribute electrons, start filling the 1st energy level (fill it completely
+<p>To distribute electrons, start filling the 1st energy level (fill it completely
 before going to the next one), working your way to the outer ones. Fill each
-completely before you go to the next energy level.
-
-
+completely before you go to the next energy level.</p>
 
 Example: an atom has 11 electrons, how many are in each energy level?
                 1st energy level     2
@@ -153,172 +154,200 @@ Example: an atom has 4 electrons, how many are in each energy level?
                1st  energy level    2
                2nd energy level    2
 
+<p>
 The last energy level does not have to have the maximum number of electrons in
 it.
+</p>
 
+<p>There are a few definitions that you need to know. You can use these definitions
+as you would a math formula.</p>
 
+<ul>
+<li>Atomic Number is the number of protons in an atom.<br>
+    Atomic number = <%= proton %></li>
+<li>Atomic Mass is the number of protons plus the number of neutrons.<br>
+    Atomic mass = <%= proton %> + <%= neutron %></li>
+</ul>
 
+<p>
+<div>We usually write this information above and below the symbol of the element:</div>
+  <%= atomic_notation "Symbol", "Atomic number", "Atomic mass" %>
+<div> For example, Lithium would be:</div>
+  <%= atomic_notation "Li", 3, 7 %>
+</p>
 
-There are a few definitions that you need to know. You can use these definitions
-as you would a math formula.
-
-Atomic Number is the number of protons in an atom.
-Atomic Mass is the number of protons plus the number of neutrons.
-                                               
-
-We usually write this information above and below the symbol of the element.
-
-
-
+<p>
 In an atom that is in its natural state, the number of protons is equal to the
 number of electrons.
+</p>
 
-                                                         
-
-
-
+<div class="illustration">
+  <%= proton %> = <%= electron %>
+</div>
+                                                       
+<p>
 Isotope: an atom that has the same atomic number but a different atomic mass.
 The number of neutrons change. This is not a normal chemical reaction.
+<div>
+  <%= atomic_notation "O", 8, 16 %>
+  <%= atomic_notation "O", 8, 18 %>
+</div>
+</p>
 
-                             
+<h2>Transferring of  electrons</h2>
+<p>
+Atoms may transfer electrons from one atom to another.
 
+Valence: the number of electrons that are transferred.
+  <div id="valence" class="clearfix">
+    <%= atomic_notation "O", 8, 16 %>
+    <div>
+      Electron distribution:
+      <ul>
+        <li>Energy level 1: 2</li>
+        <li>Energy level 2: 6</li>
+      </ul>
+    </div>
+  </div>
+  
+</p>
 
-
-
-
-Transferring of  electrons
-	Atoms may transfer electrons from one atom to another.
-
-	Valence: the number of electrons that are transferred.
-
-		
-
+<p>
 Atoms like to have the outer most energy level complete. To do this the atom can
 take in electrons from another atom, give away electrons to another atom, or
 share electrons with another atom.
+</p>
 
+<p>
 Oxygen has 6 electrons in the outer energy level; it needs two electrons to
 complete the outer energy level. Two additional electrons added to the outer
 energy level will put the maximum number of electrons in the outer energy level.
 We say that it is now complete.
+</p>
 
+<p>
 This means that the atom will have two additional negatives. The number of
-protons and electrons are now not equal. There will be . This atom is now an
-ion.
+protons and electrons are now not equal. There will be 8 <%= proton %> and 10 <%= electron %>. This atom is now an ion.
+</p>
 
-	ion -  an atom that has an electrical charge.
+  ion -  an atom that has an electrical charge.
 
-                                                      
-                                                               The atom has 2
-electrons too many.
+<p>
+10 <%= electron %> + 8 <%= proton %> => 2 <%= electron %><br>
+We write ions like this: O<sup>-2</sup><br>
+The atom has 2 electrons too many.<br>
 
-Atoms try to complete their outer energy level.                                                                                                      
+Atoms try to complete their outer energy level.
+</p>
 
+<h2>Combining Atoms</h2>
 
+<div class="illustration">
+  <%= image_tag 'matter/combine-atoms.png', :class => 'illustration wide' %>
+</div>
 
-
-
-
-
-
-
-
-Combining Atoms          
-
-
-
-
-
-
-
-
-
-
-
-
+<p>
 Instead of drawing out the atoms and transferring the electrons from one atom to
-another, there is a simpler method.
+another, there is a simpler method. Write the involved atoms with their valence
+number:
+</p>
 
-Write the symbol for each atom with its valence number above it.
-                   +1           -2
-                     H              O   
+<div id="cross-multiply">
+  <div>
+    <%= atomic_notation('H', '+1') %>
+    <%= atomic_notation('O', '-2') %>
+  </div>
+  <div class="cross"><%= image_tag 'matter/cross.png' %></div>
+  <div>
+    <%= atomic_notation('H', '', '2') %>
+    <%= atomic_notation('O', '', '1') %>
+  </div>
+</div>
 
-Now criss cross the valence numbers to the bottom  of the symbols
+<p>
+And then just cross the valence number down to indicate the quantity of that
+element. Subscripts of '1' can be dropped, and the formula is written as: H<sub>2</sub>O
+</p>
 
-                  H           O   
-                    2            1
-
-       
-
-This is a Molecule of water. If we write 6 H2O, that tells us that we have 6
+<p>
+This is a molecule of water. If we write 6 H<sub>2</sub>O, that tells us that we have 6
 molecules of water. The number in front of the compound tells us how many
 molecules there are.
+</p>
 
-            
+<p>
+6 H<sub>2</sub>O => 6 molecules
+</p>
 
-How many Molecules and Atoms
+<h2>How many Molecules and Atoms</h2>
 
-                
+<p>
+6 H<sub>2</sub>O => 6 molecules<br>
+H = 6 * 2 => 12<br>
+O = 6 * 1 => 6<br>
+Total: 18 atoms and 6 molecules<br>
+</p>
 
+<p>
+There are 3 states of matter:
+<ul>
+  <li>Solid</li>
+  <li>Liquid</li>
+  <li>Gas</li>
+<ul>
+</p>
 
+<p>Some substances may exist in all three states. Water is a good example of this.
+Water is a liquid; ice is a solid; steam is a gas.</p>
 
+<p>Substances may change from one state to another by adding or subtracting
+heat.</p>
 
+<p>You need to understand the meaning of melting point, freezing point, and boiling
+point.</p>
 
+<ul>
+  <li><strong>Melting Point</strong>: the temperature at which a solid changes
+into a liquid.</li>
+  <li><strong>Freezing Point</strong>: the temperature at which a liquid changes
+into a solid.</li>
+  <li><strong>Boiling Point</strong>: the temperature at which a liquid changes into a gas.
+</li>
+</ul>
 
-
-
-
-
-
-
-There are 3 states of matter.
-States of Matter
-	1. solid
-	2. liquid
-	3. gas
-
-Some substances may exist in all three states. Water is a good example of this.
-Water is a liquid; ice is a solid; steam is a gas.
-
-Substances may change from one state to another by adding or subtracting heat.
-
-You need to understand the meaning of melting point, freezing point, and boiling
-point.
-
-Melting Point: the temperature at which a solid changes into a liquid.
-
-Freezing Point: The temperature at which a liquid changes into a solid.
-
-Boiling Point: The temperature at which a liquid changes into a gas.
-
-Notice that for each definition there is no actual temperature given. The
+<p>Notice that for each definition there is no actual temperature given. The
 atmospheric pressure will directly affect the actual temperatures. Keep in mind
 that the Earth is surrounded by an atmosphere that is about 100,000 miles thick.
 This atmosphere weighs something. At sea level it put a pressure on you of 14.7
 lbs/ sq. inch. That means, if you draw a 1 inch square on you, there is 14.7
-pounds of pressure pushing on it. 
+pounds of pressure pushing on it.</p>
 
-We say that water boils at 212° F. This is only at sea level. As you go to a
+<p>We say that water boils at 212° F. This is only at sea level. As you go to a
 higher elevation, the temperature to boil water goes down. It goes down about 2
 degrees for every 1000 ft you go up in elevation. So in Denver, Colorado, which
 is at 5,280 feet above sea level (mile high city), water boils at 202 degrees
 Fahrenheit. At this altitude you has less air pressure pushing down on the
-water.
+water.</p>
 
-If you had a vacuum chamber, by reducing the air pressure in it, you could get
-the water to boil at room temperature.
+<p> If you had a vacuum chamber, by reducing the air pressure in it, you could get
+the water to boil at room temperature.</p>
 
-            Water
-		Freezing Point			Boiling Point
+<table id="water">
+  <thead>
+    <tr><td colspan="2">Water</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>Freezing Point</td><td>Boiling Point</td></tr>
+    <tr><td>0° C</td><td>100 °C</td></tr>
+    <tr><td>32° F</td><td>212 °F</td></tr>
+  </tbody>
+</table>
 
-		          O° C			     100° C
 
-                                 32° F			     212° F
-
+<p>
 These temperatures are for sea level. If you are above sea level they will
-change.
+change.</p>
 
-There are a few substances that don't melt. They go directly from a solid to a
+<p>There are a few substances that don't melt. They go directly from a solid to a
 gas. This process is called sublimation. Dry ice (frozen carbon dioxide) is a
-good example of this.
-</pre>
+good example of this.</p>

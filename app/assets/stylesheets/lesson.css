@@ -23,6 +23,9 @@
   width: 500px;
   margin: 0 auto;
 }
+#content .illustration.wide {
+  max-width: 600px;
+}
 #content ol {
   padding: 10px;
   margin: 10px;
