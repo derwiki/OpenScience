@@ -7,7 +7,9 @@ class LessonController < ApplicationController
 
   def matter
     require 'periodic' # for displaying
-    @sections = %w(all)
+    @sections = %w(forms_of_matter structure_of_an_atom
+                   transferring_of_electrons combining_atoms
+                   how_many_molecules_and_atoms)
   end
 
   def index

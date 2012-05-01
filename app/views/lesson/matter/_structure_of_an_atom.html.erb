@@ -1,0 +1,121 @@
+<h2>Structure of an atom</h2>
+There are several ways of drawing an atom:
+
+<ol>
+<li>
+  <div>Bohr structure</div>
+  <%= image_tag 'matter/bohr-structure.png', :class => :illustration %>
+  <p>A physicist by the name of Niels Bohr drew the atom for his students that looked
+like the solar system. The nucleus was in the center with the electrons
+traveling around it like planets going around the sun.</p>
+  <p>Some scientist criticized the drawing stating that it gave the impression that
+atoms are flat like a pancake. But in fact, they are 3 dimensional.</p>
+</li>
+<li>
+  <div>Atomic Orbitals</div>
+  <p>So atoms were drawn 3 dimensionally, like this drawing:</p>
+  <%= image_tag 'matter/orbitals.png', :class => :illustration  %>
+<p>But there is a problem with this. Electrons travel at the speed of light
+(186,00miles per second). You can't pin point the exact spot where an electron
+is plus the fact that electrons move close toward the nucleus then move further
+away. Since you are just beginning to learn about the atom, this type of drawing
+makes it difficult to learn and understand about the various energy levels.
+</p>
+</li>
+<li>
+  <div>Electron Cloud</div>
+  <div>Since the electrons move so fast. and it's difficult to say where the electrons
+are at any given moment, they started to draw the atom as a cloud. </div>
+
+<div class="illustration">
+  <%= image_tag 'matter/electron-cloud.png', :class => :illustration  %>
+</div>
+
+<p>                                         
+But again, since you are just beginning to learn about the atom and its parts,
+this drawing makes it difficult to understand the structure of the atom.</p>
+
+<p>Let me ask you a question. If the electrons are traveling at the speed of light,
+why don't they fly off into space? What is the charge of an electron and what is
+the charge of a proton in the nucleus? Can you now figure out why the electrons
+don't fly off into space?</p>
+</li>
+</ol>
+
+<p>
+So in this section on matter, the atom will be drawn as the Bohr atom.
+</p>
+
+<div class="illustration">
+  <%= image_tag 'matter/energy-levels.png', :class => :illustration  %>
+</div>
+
+<p>In the atom the protons and neutrons are located in the nucleus. The electrons
+are located in rings or what are called energy levels. The energy levels are
+called: 1st energy level, 2nd energy level, 3rd energy level and so forth. Each
+energy level can contain only a certain number of electrons. Learning how many
+electrons are in each energy level can be complicated to learn for the beginner.
+So we are going to work with 21 electrons or less so we can get an understanding
+of the distribution of electrons and how electrons can be transferred to other
+atoms in forming compounds. To understand the distribution for a large number of
+the electrons completely, you will need to take a course in chemistry.
+</p>
+
+<p>To distribute electrons, start filling the 1st energy level (fill it completely
+before going to the next one), working your way to the outer ones. Fill each
+completely before you go to the next energy level.</p>
+
+Example: an atom has 11 electrons, how many are in each energy level?
+                1st energy level     2
+                2nd energy level    8
+                3rd energy level    1
+
+Example: an atom has 18 electrons, How many are in each energy level?
+               1st energy level     2
+               2nd energy level    8
+               3rd energy level    8
+
+Example: an atom has 4 electrons, how many are in each energy level?
+               1st  energy level    2
+               2nd energy level    2
+
+<p>
+The last energy level does not have to have the maximum number of electrons in
+it.
+</p>
+
+<p>There are a few definitions that you need to know. You can use these definitions
+as you would a math formula.</p>
+
+<ul>
+<li>Atomic Number is the number of protons in an atom.<br>
+    Atomic number = <%= proton %></li>
+<li>Atomic Mass is the number of protons plus the number of neutrons.<br>
+    Atomic mass = <%= proton %> + <%= neutron %></li>
+</ul>
+
+<p>
+<div>We usually write this information above and below the symbol of the element:</div>
+  <%= atomic_notation "Symbol", "Atomic number", "Atomic mass" %>
+<div> For example, Lithium would be:</div>
+  <%= atomic_notation "Li", 3, 7 %>
+</p>
+
+<p>
+In an atom that is in its natural state, the number of protons is equal to the
+number of electrons.
+</p>
+
+<div class="illustration">
+  <%= proton %> = <%= electron %>
+</div>
+                                                       
+<p>
+Isotope: an atom that has the same atomic number but a different atomic mass.
+The number of neutrons change. This is not a normal chemical reaction.
+<div>
+  <%= atomic_notation "O", 8, 16 %>
+  <%= atomic_notation "O", 8, 18 %>
+</div>
+</p>
+

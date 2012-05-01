@@ -1,0 +1,38 @@
+<h2>Combining Atoms</h2>
+
+<div class="illustration">
+  <%= image_tag 'matter/combine-atoms.png', :class => 'illustration wide' %>
+</div>
+
+<p>
+Instead of drawing out the atoms and transferring the electrons from one atom to
+another, there is a simpler method. Write the involved atoms with their valence
+number:
+</p>
+
+<div id="cross-multiply">
+  <div>
+    <%= atomic_notation('H', '+1') %>
+    <%= atomic_notation('O', '-2') %>
+  </div>
+  <div class="cross"><%= image_tag 'matter/cross.png' %></div>
+  <div>
+    <%= atomic_notation('H', '', '2') %>
+    <%= atomic_notation('O', '', '1') %>
+  </div>
+</div>
+
+<p>
+And then just cross the valence number down to indicate the quantity of that
+element. Subscripts of '1' can be dropped, and the formula is written as: H<sub>2</sub>O
+</p>
+
+<p>
+This is a molecule of water. If we write 6 H<sub>2</sub>O, that tells us that we have 6
+molecules of water. The number in front of the compound tells us how many
+molecules there are.
+</p>
+
+<p>
+6 H<sub>2</sub>O => 6 molecules
+</p>

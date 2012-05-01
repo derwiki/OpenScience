@@ -1,0 +1,73 @@
+<h2>Forms of matter</h2>
+
+<ol>
+<li><em>Element</em>
+          - a substance that cannot be broken down into simpler substances by
+            ordinary chemical or physical means.<br/>
+		example: gold, silver, lead, oxygen, silicon, hydrogen, iron
+  <span>
+		The simplest form of the element is the Atom.
+
+		One atom has all the properties of the element.
+  </span>
+</li>
+
+<li><em>Mixture</em>
+          - particles combined in any proportion.<br/>
+		example: salt &amp; pepper mixed together, soil, rocks
+  <span>
+    Rocks can be broken apart into individual mineral grains.
+
+    For example, granite is made of: feldspar, quartz, mica, garnet
+  </span>
+</li>
+
+<li><em>Compounds</em>
+          - two or more elements combining in a definite ratio.<br/>
+		example:<br/>
+			<span>H + O &rarr; H<sub>2</sub>O (water)</span>
+			<span>Na + Cl &rarr; NaCl (salt)</span>
+</li>
+</ol>
+
+<p>
+When they combine you get a new substance with new properties. Hydrogen (H) is a
+gas that is very explosive; Oxygen is a gas that is not explosive but makes
+things burn faster. Water is not a gas but a liquid and it puts out fires rather
+than explode. The compound has its own properties.
+</p>
+	Molecule - two or more kinds of atoms can exist in free form
+
+			     NaCl       HCl 
+
+  Some common elements and their symbol:
+<table>
+  <%- (1..15).each do |atomic_nr| -%>
+    <%- name, abbrev = ELEMENTS_BY_ATOMIC_NR[atomic_nr] -%>
+    <%= content_tag :tr, content_tag(:td, name) + content_tag(:td, abbrev) %>
+  <%- end -%>
+</table>
+
+<p>
+When you learn the symbols, it's important to learn them with the proper upper
+and lower case.  "C" is carbon; "O" is oxygen; when combined they can form
+carbon monoxide ("CO"). But if you write "O" as "o", it will look like this "Co" which
+is not carbon monoxide -- it's the symbol for the element cobalt. These are
+symbols, not abbreviations.
+</p>
+<p>
+When you learn the symbols, it's important to learn them with the proper letter casing.
+</p>
+
+Atoms consists of:
+<ul>
+  <li>protons (p<sup>+</sup>)</li>
+  <li>neutrons (n<sup>0</sup>)</li>
+  <li>electrons (e<sup>-</sup>)</li>
+</ul>
+
+
+<p>The Positive (+) and Negative(-) signs on the protons and electrons are their charge.
+Think of the charge like you would of magnets. Like charges repel and unlike
+charges attract. The neutrons have no charge.</p>
+

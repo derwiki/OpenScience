@@ -7,6 +7,7 @@
     These notes and lesson plans are designed to be used for grades 5 – 8.
   </div>
 
+  <p>Matter: anything that occupies space and has mass</p>
   <%- @sections.zip(['selected']).each do |section, selected| -%>
     <div id="<%= section %>" class="section <%= selected %>">
       <%= render "lesson/matter/#{section}" %>
