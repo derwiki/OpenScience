@@ -13,6 +13,7 @@
 #content .illustration div {
   margin: 20px auto;
 }
+#content .illustration img,
 #content img.illustration {
   max-width: 400px;
 }

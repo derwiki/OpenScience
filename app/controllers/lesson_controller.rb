@@ -12,6 +12,10 @@ class LessonController < ApplicationController
                    how_many_molecules_and_atoms)
   end
 
+  def rock_cycle
+    @sections = []
+  end
+
   def index
   end
 
