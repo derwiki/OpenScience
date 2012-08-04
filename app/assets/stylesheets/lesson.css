@@ -60,3 +60,9 @@
   width: 450px;
   padding-left: 10px;
 }
+body #disqus_thread {
+  display: block;
+}
+#dsq-global-toolbar, #dsq-subscribe {
+  display: none;
+}

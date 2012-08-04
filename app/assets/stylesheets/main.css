@@ -108,3 +108,6 @@ OTHERS
   position: fixed;
   top: 0;
 }
+#disqus_thread {
+  display: none;
+}
