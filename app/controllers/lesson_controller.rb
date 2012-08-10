@@ -16,6 +16,10 @@ class LessonController < ApplicationController
     @sections = []
   end
 
+  def weather_atmosphere
+    @sections = %w(solar_energy wind pressure storms humidity)
+  end
+
   def index
   end
 
