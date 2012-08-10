@@ -17,7 +17,7 @@ class LessonController < ApplicationController
   end
 
   def weather_atmosphere
-    @sections = %w(solar_energy wind pressure storms humidity)
+    @sections = %w(weather_atmosphere solar_energy wind pressure storms humidity)
   end
 
   def index

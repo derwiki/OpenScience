@@ -1,71 +1,14 @@
 = javascript_include_tag "lesson"
 = stylesheet_link_tag "lesson/matter"
+
 -content_for :content do
-  %h2 Atmosphere/Weather
+  - @sections.zip(['selected']).each do |section, selected|
+    %div{id: section, class: "section #{selected}"}
+      = render "lesson/weather_atmosphere/#{section}"
 
-  %p
-    The earth is surrounded by a hugh mass of gases called the atmosphere. It extends outward for approximately 100,000 miles; it consists of gases that cannot be seen; gases have volume and weight. These gases are held in place by the earth’s gravity.
-
-  %p
-    In 1752 it was found that air contained CO2, and within the next 20 years Nitrogen and oxygen were also found.
-
-  %p 
-    Composition of the atmosphere:
-
-  %ul
-    %li Nitrogen  -- 78%
-    %li Oxygen -- 21%
-    %li Carbon Dioxide -- .03%
-    %li Argon -- .93%
-
-  %p
-    (Joseph Priestly discovered Oxygen.)
-
-  %p
-    Water vapor is also found in the atmosphere; it depends on temperature; varies from 0 to 4%. Also part of the atmosphere are solid and liquid impurities called pollutants. Solid pollutants are called Particulate Matter.
-
-
-  %h3 Structure of the Atmosphere
-
-  .illustration
-    = image_tag "/assets/weather_atmosphere/structure-of-the-atmosphere.png"
-
-  %p Troposphere: 
-    
-  %ul
-    %li extends upward about 7 miles.
-    %li contains 75% of gases in the atmosphere
-    %li all weather occurs here
-    %li as we go higher the temp. decreases at a rate of 3.5°F / 1000feet or 6.5 deg. F/1000 meters. This is known as the Normal Lapse Rate.
-
-  %p Stratosphere: 
-    
-  %ul
-    %li about 43 miles thick
-    %li calm air  -- no storms
-    %li free from dust &amp; water vapor
-    %li found here is the Jet Stream
-
-  %p Mesosphere: 
-    
-  %ul 
-    %li contains ozone (O3)
-    %li blocks out ultraviolet light from the sun                                                                   
-    %li a small amount of UV light gets through and  gives you a sun tan.
-
-  %p Ionosphere: 
-    
-  %ul 
-    %li about 250 miles thick
-    %li reflects radio waves
-
-  .illustration
-    = image_tag "/assets/weather_atmosphere/radio-signals.png"
-
-  %p
-    During the day radio signals bounce off the lower layer of the ionosphere back to earth. At night the molecules in the lower layer spread apart and the radio signal can go higher into the atmosphere. The signal will then be reflected by a second layer. This will cause the signal to travel further on the surface of the earth. This is why at night you can hear radio stations that are further away.
-
-  %p Exosphere: 
-
-  %ul
-    %li Van Allen’s Radiation belt found here; made up of charged particles. These particles come from the Sun and are trapped by Earth's magnetic field. As they fall through the atmosphere, they burn up giving rise to the Aurora Borealis (northern lights).
+-content_for :toc do
+  %ul#section-picker
+    - @sections.each do |section|
+      %li= link_to section.titleize, "#", :"data-section-id" => section
+    %li
+      %a.showall{href: '#'} Show All Sections
