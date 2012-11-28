@@ -1,0 +1,41 @@
+.nav .homebox {
+  width: 350px;
+  height: 350px;
+  display: inline-block;
+  float: left;
+  color: #eee;
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .title {
+    font-size: 26px;
+    padding: 10px 0 0 10px;
+
+  }
+
+  .credit {
+    float: right;
+    padding: 280px 5px 0 0;
+    font-size: 10px;
+    color: #aaa
+  }
+
+  &.electricity {
+    background-image: url(image_path('home/lightning.png'));
+  }
+
+  &.matter {
+    background-image: url(image_path('home/plasma.png'));
+  }
+
+  &.rock_cycle {
+    background-image: url(image_path('home/volcano.png'));
+  }
+
+  &.weather_atmosphere {
+    background-image: url(image_path('home/clouds.png'));
+  }
+}

@@ -1,14 +1,11 @@
 = content_for :content do
-  %ul
-    %li
-      %a{:href => "/lessons/electricity"} Electricity
-      \- targeted for 5th to 8th graders
-    %li
-      %a{:href => "/lessons/matter"} Matter
-      \- targeted for 5th to 8th graders
-    %li
-      %a{:href => "/lessons/rock_cycle"} Rock Cycle
-      \- targeted for 5th to 8th graders
-    %li
-      %a{:href => "/lessons/weather_atmosphere"} Weather Atmosphere
-      \- targeted for 5th to 8th graders
+  .nav
+    %a.homebox.electricity{:href => "/lessons/electricity" }
+      .title Electricity
+    %a.homebox.matter{:href => "/lessons/matter" }
+      .title Matter
+      .credit Luc Viatour / www.Lucnix.be
+    %a.homebox.rock_cycle{:href => "/lessons/rock_cycle" }
+      .title Rock Cycle
+    %a.homebox.weather_atmosphere{:href => "/lessons/weather_atmosphere" }
+      .title Weather and Atmosphere

@@ -6,62 +6,60 @@
     %meta{:content => "en", "http-equiv" => "content-language"}/
     %meta{:content => "Free and open science lesson plans to use in the classroom", :name => "description"}/
     %meta{:content => "Template:TemplatesDock [www.templatesdock.com]; e-mail:hello@templatesdock.com", :name => "author"}/
-    %link{:href => "/assets/main.css", :media => "screen,projection", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/assets/skin.css", :media => "screen,projection", :rel => "stylesheet", :type => "text/css"}/
-    %title openscience
-    = stylesheet_link_tag    "application", :media => "all"
+    %title OpenScience
+    = stylesheet_link_tag "application", :media => "all"
     = csrf_meta_tags
-    %body
-      .main
-        #header.box
-          %h1#logo
-            %a{:href => "/"}
-              open
-              %span science
-          %ul#nav
-            %li
-              %a{:href => "/lessons"} Lessons
-            %li
-              %a{:href => "/authors"} Authors
-        #section.box
-          #content
-            = yield :content
-            #disqus_thread
-          #tocWrapper
-            #toc
-              %form
-                = yield :toc
-      #footer
-        .main.box
-          / Would you like to remove this line? Visit www.templatesdock.com/terms.php
-          %p.f-right.t-right
-            %a{:href => "http://www.templatesdock.com/"} Free web templates
-            by TemplatesDock
-            %br>/
-            Tip:
-            %a{:href => "http://www.intedoor.cz"} koupelnovy nabytek
-          / Would you like to remove this line? Visit www.templatesdock.com/terms.php
-      = javascript_include_tag "application"
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-30187822-1']);
-        _gaq.push(['_trackPageview']);
+  %body
+    .main
+      #header.box
+        %h1#logo
+          %a{:href => "/"}
+            open
+            %span science
+        %ul#nav
+          %li
+            %a{:href => "/lessons"} Lessons
+          %li
+            %a{:href => "/authors"} Authors
+      #section.box
+        #content
+          = yield :content
+          #disqus_thread
+        #tocWrapper
+          #toc
+            %form
+              = yield :toc
+    #footer
+      .main.box
+        / Would you like to remove this line? Visit www.templatesdock.com/terms.php
+        %p.f-right.t-right
+          %a{:href => "http://www.templatesdock.com/"} Free web templates
+          by TemplatesDock
+          %br>/
+          Tip:
+          %a{:href => "http://www.intedoor.cz"} koupelnovy nabytek
+        / Would you like to remove this line? Visit www.templatesdock.com/terms.php
+    = javascript_include_tag "application"
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30187822-1']);
+      _gaq.push(['_trackPageview']);
 
-        (function() {
-          var ga = document.createElement('script');
-          ga.type = 'text/javascript';
-          ga.async = true;
-          ga.src = 'http://www.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(ga, s);
-        })();
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = 'http://www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
 
-        var disqus_shortname = 'open-science'; // required: replace example with your forum shortname
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      %noscript
-        Please enable JavaScript to view the
-        = link_to 'comments powered by Disqus.', 'http://disqus.com/?ref_noscript'
+      var disqus_shortname = 'open-science'; // required: replace example with your forum shortname
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    %noscript
+      Please enable JavaScript to view the
+      = link_to 'comments powered by Disqus.', 'http://disqus.com/?ref_noscript'

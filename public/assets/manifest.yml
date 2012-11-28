@@ -28,6 +28,10 @@ electricity/wire-types.png: electricity/wire-types-68e602924fc5669c2fa922cd741aa
 electricity/wired-house.png: electricity/wired-house-c40218219f5ebfaa85d548d99f54ef16.png
 footer.gif: footer-020b97db31ecfbcd9f14d58f643cf189.gif
 header.png: header-1d78a885b42dfa0fbd0e69c75dc35af1.png
+home/clouds.png: home/clouds-2068a5892e00edb36fcaf8ac695c2c7f.png
+home/lightning.png: home/lightning-2a9796225d05f2f65378407e52eca7dc.png
+home/plasma.png: home/plasma-bdb14f59378b0d0ca48806f4b62d05e5.png
+home/volcano.png: home/volcano-850902fca7062fba8d8ae240144eae5c.png
 matter/atom-definitions.png: matter/atom-definitions-8e5ef30cda7f9f0552948376eb055754.png
 matter/bohr-structure.png: matter/bohr-structure-c649a7643bc4efff935dcefbd2302f8e.png
 matter/combine-atoms.png: matter/combine-atoms-f62bed440a8ea835045ef9be9bd2eefe.png
@@ -74,4 +78,4 @@ weather_atmosphere/special-winds.png: weather_atmosphere/special-winds-10b6ce2cd
 weather_atmosphere/structure-of-the-atmosphere.png: weather_atmosphere/structure-of-the-atmosphere-54cef5a9d0dab11705256b755725b657.png
 weather_atmosphere/suns-rays.png: weather_atmosphere/suns-rays-39e9dc18ce70194233beec3488106ee1.png
 application.js: application-b07d8c8f2866557028e0203828f52dc8.js
-application.css: application-7e8c35a25416c4a0e9841d66f747c136.css
+application.css: application-ca3862f6311fdbd778d3647571123a49.css
