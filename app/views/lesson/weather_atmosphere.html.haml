@@ -5,6 +5,7 @@
   - @sections.zip(['selected']).each do |section, selected|
     %div{id: section, class: "section #{selected}"}
       = render "lesson/weather_atmosphere/#{section}"
+  #disqus_thread
 
 -content_for :toc do
   %ul#section-picker
