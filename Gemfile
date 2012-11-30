@@ -4,6 +4,9 @@ gem 'rails', '3.2.8'
 gem 'json'
 gem 'haml', '3.1.7'
 gem 'thin'
+gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+gem 'therubyracer'
 
 group :development do
   gem 'sqlite3'
