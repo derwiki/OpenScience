@@ -1,26 +1,26 @@
 !!! Strict
 / Free web templates by http://www.templatesdock.com; released for free under a Creative Commons Attribution 3.0 License
-%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+%html{ xmlns: 'http://www.w3.org/1999/xhtml' }
   %head
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %meta{:content => 'text/html; charset=utf-8', "http-equiv" => "content-type"}/
     %meta{:content => "en", "http-equiv" => "content-language"}/
     %meta{:content => "Free and open science lesson plans to use in the classroom", :name => "description"}/
     %meta{:content => "Template:TemplatesDock [www.templatesdock.com]; e-mail:hello@templatesdock.com", :name => "author"}/
     %title OpenScience
-    = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
   %body
     .main
       #header.box
         %h1#logo
-          %a{:href => "/"}
+          %a{ href: '/' }
             open
             %span science
         %ul#nav
           %li
-            %a{:href => "/lessons"} Lessons
+            %a{ href: '/lessons' } Lessons
           %li
-            %a{:href => "/authors"} Authors
+            %a{ href: '/authors' } Authors
       #section.box
         #content
           = yield :content
@@ -32,11 +32,11 @@
       .main.box
         / Would you like to remove this line? Visit www.templatesdock.com/terms.php
         %p.f-right.t-right
-          %a{:href => "http://www.templatesdock.com/"} Free web templates
+          %a{ href: 'http://www.templatesdock.com/' } Free web templates
           by TemplatesDock
           %br>/
           Tip:
-          %a{:href => "http://www.intedoor.cz"} koupelnovy nabytek
+          %a{ href: 'http://www.intedoor.cz' } koupelnovy nabytek
         / Would you like to remove this line? Visit www.templatesdock.com/terms.php
     = javascript_include_tag "application"
     :javascript
