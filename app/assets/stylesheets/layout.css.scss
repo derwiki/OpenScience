@@ -1,0 +1,32 @@
+.header {
+  background: url(/assets/header.png);
+  height: 140px;
+  a {
+    color: #eee;
+    &:hover {
+      text-decoration: none
+    }
+  }
+
+  .title {
+    font-size: 45px;
+    line-height: 140px;
+    a span {
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    line-height: 110px;
+    list-style-type: none;
+    font-size: 16px;
+
+    li {
+      display: inline;
+    }
+  }
+}
+
+.content {
+  padding-top: 10px;
+}

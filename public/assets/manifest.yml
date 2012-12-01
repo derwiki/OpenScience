@@ -26,6 +26,7 @@ electricity/switches.png: electricity/switches-9eecfe17955d965918fe6dfc32287098.
 electricity/thermocouple.png: electricity/thermocouple-5015992104eb848c6eba9de345697069.png
 electricity/wire-types.png: electricity/wire-types-68e602924fc5669c2fa922cd741aac08.png
 electricity/wired-house.png: electricity/wired-house-c40218219f5ebfaa85d548d99f54ef16.png
+favicon.ico: favicon-4a45019d8da4fd651b6957759d5f173d.ico
 footer.gif: footer-020b97db31ecfbcd9f14d58f643cf189.gif
 header.png: header-1d78a885b42dfa0fbd0e69c75dc35af1.png
 home/clouds.png: home/clouds-2068a5892e00edb36fcaf8ac695c2c7f.png
@@ -77,5 +78,11 @@ weather_atmosphere/radio-waves.png: weather_atmosphere/radio-waves-bb731b902634a
 weather_atmosphere/special-winds.png: weather_atmosphere/special-winds-10b6ce2cd4702bdfa033dc4ce80aabce.png
 weather_atmosphere/structure-of-the-atmosphere.png: weather_atmosphere/structure-of-the-atmosphere-54cef5a9d0dab11705256b755725b657.png
 weather_atmosphere/suns-rays.png: weather_atmosphere/suns-rays-39e9dc18ce70194233beec3488106ee1.png
-application.js: application-6c4384039d416565c271b5d0abedf19e.js
-application.css: application-30e97580a42df2ef9c16d00d27483ca9.css
+application.js: application-14f602e73e354f1274c368d091337a34.js
+application.css: application-a6e88f510a7eb3571cd22fddb33c60c5.css
+fontawesome-webfont.eot: fontawesome-webfont-7cf1b0de49e2f8672c9ad6d9e382115f.eot
+fontawesome-webfont.svg: fontawesome-webfont-4d19fdd70a080778557b652cb4868557.svg
+fontawesome-webfont.ttf: fontawesome-webfont-1e29be0bb354c9f664cbca7df9a966d8.ttf
+fontawesome-webfont.woff: fontawesome-webfont-9c0e35b95bf9cea29c77678ebf71a29d.woff
+twitter/bootstrap/glyphicons-halflings-white.png: twitter/bootstrap/glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
+twitter/bootstrap/glyphicons-halflings.png: twitter/bootstrap/glyphicons-halflings-ab3144065a860d198f1d7d9a4882640c.png
