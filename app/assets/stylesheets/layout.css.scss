@@ -3,16 +3,28 @@
   height: 140px;
   a {
     color: #eee;
+
     &:hover {
-      text-decoration: none
+      text-decoration: none;
     }
   }
 
   .title {
     font-size: 45px;
     line-height: 140px;
+
     a span {
       font-weight: bold;
+    }
+
+    .tagline {
+      color: #eee;
+      font-size: 16px;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-top: -40px;
+      margin-left: 27px;
+      width: 550px;
     }
   }
 
