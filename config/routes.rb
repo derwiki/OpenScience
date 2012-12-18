@@ -1,5 +1,5 @@
 Openscience::Application.routes.draw do
-  root :to => 'lesson#index'
+  root :to => 'lessons#index'
   resource :lessons do
     member do
       get 'electricity'
@@ -10,7 +10,7 @@ Openscience::Application.routes.draw do
       get 'index'
     end
   end
-  match 'authors' => 'lesson#authors'
+  match 'authors' => 'lessons#authors'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
