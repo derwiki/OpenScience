@@ -1,4 +1,4 @@
-class LessonController < ApplicationController
+class LessonsController < ApplicationController
   def electricity
     @sections = %w(what_is_electricity conductors_and_insulators circuits wire
                    switches wire_a_house make_a_motor ac_dc make_a_battery
@@ -19,6 +19,10 @@ class LessonController < ApplicationController
   def weather_atmosphere
     @sections = %w(weather_atmosphere solar_energy special_winds pressure
                    humidity storms uses_of_this_information)
+  end
+
+  def igneous_rock
+    @secionts = []
   end
 
   def index

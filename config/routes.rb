@@ -1,11 +1,15 @@
 Openscience::Application.routes.draw do
-  #get "default/show"
   root :to => 'lesson#index'
-  match 'lessons' => 'lesson#index'
-  match 'lessons/electricity' => 'lesson#electricity'
-  match 'lessons/matter' => 'lesson#matter'
-  match 'lessons/rock_cycle' => 'lesson#rock_cycle'
-  match 'lessons/weather_atmosphere' => 'lesson#weather_atmosphere'
+  resource :lessons do
+    member do
+      get 'electricity'
+      get 'matter'
+      get 'rock_cycle'
+      get 'weather_atmosphere'
+      get 'igneous_rock'
+      get 'index'
+    end
+  end
   match 'authors' => 'lesson#authors'
 
   # The priority is based upon order of creation:
