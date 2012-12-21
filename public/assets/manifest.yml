@@ -30,6 +30,7 @@ favicon.ico: favicon-4a45019d8da4fd651b6957759d5f173d.ico
 footer.gif: footer-020b97db31ecfbcd9f14d58f643cf189.gif
 header.png: header-1d78a885b42dfa0fbd0e69c75dc35af1.png
 home/clouds.png: home/clouds-2068a5892e00edb36fcaf8ac695c2c7f.png
+home/gneiss.jpg: home/gneiss-07a808a69bb421dc62b11a610e9b13b0.jpg
 home/igneous_rock.jpg: home/igneous_rock-547b076bd138226c19dfacc992d1a1ae.jpg
 home/lightning.png: home/lightning-2a9796225d05f2f65378407e52eca7dc.png
 home/plasma.png: home/plasma-bdb14f59378b0d0ca48806f4b62d05e5.png
@@ -57,7 +58,17 @@ matter/cross.png: matter/cross-1cb6550a88e0e5f73037dd7f3d29449e.png
 matter/electron-cloud.png: matter/electron-cloud-dcc3ef8334f629047d250f93e81ad229.png
 matter/energy-levels.png: matter/energy-levels-e49178e5abf53d4d5dd673b3d5090c04.png
 matter/orbitals.png: matter/orbitals-151c2a3547cd836c2b773640c4a42526.png
-rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
+metamorphic_rock/foliation.png: metamorphic_rock/foliation-fab50ba595fffdd690c3d5782843fe9a.png
+metamorphic_rock/garnet_mica_schist.jpg: metamorphic_rock/garnet_mica_schist-b39cfa1cb6b3375238f49077b9659c00.jpg
+metamorphic_rock/gneiss.jpg: metamorphic_rock/gneiss-20308e77f9277e582ed7257c7f55ccec.jpg
+metamorphic_rock/granulation.png: metamorphic_rock/granulation-788752d04a1a25219021f1743052ff11.png
+metamorphic_rock/granulation_bands.png: metamorphic_rock/granulation_bands-4a9f69b8c5c96894004567ca92b020fd.png
+metamorphic_rock/gray_and_pink_granite.jpg: metamorphic_rock/gray_and_pink_granite-7816f84bd1020c077bf34a6977a76ac0.jpg
+metamorphic_rock/phyllite.jpg: metamorphic_rock/phyllite-4a49861514483fd40b975a1894016db1.jpg
+metamorphic_rock/quartzite.jpg: metamorphic_rock/quartzite-3c3514aa9fd2b34448600a7b9155e722.jpg
+metamorphic_rock/regional_metamorphism.png: metamorphic_rock/regional_metamorphism-6275616fab9903d028b36210bdd829ce.png
+metamorphic_rock/schist.jpg: metamorphic_rock/schist-42d5fbf71546982e43a3ab844d4fa0bf.jpg
+metamorphic_rock/slate.jpg: metamorphic_rock/slate-de98392f236493555dd0360fa67d2ce3.jpg
 rock_cycle/cinder-cone.png: rock_cycle/cinder-cone-e01fa77c61b6407ae4a540736cf7fad1.png
 rock_cycle/crust-mantle-core.png: rock_cycle/crust-mantle-core-3843fc48c48f5ca1e36b5905cc022bdc.png
 rock_cycle/igneous-rock.png: rock_cycle/igneous-rock-abf2af5b83c4fa51801843fea3e6f791.png
@@ -96,7 +107,7 @@ weather_atmosphere/special-winds.png: weather_atmosphere/special-winds-10b6ce2cd
 weather_atmosphere/structure-of-the-atmosphere.png: weather_atmosphere/structure-of-the-atmosphere-54cef5a9d0dab11705256b755725b657.png
 weather_atmosphere/suns-rays.png: weather_atmosphere/suns-rays-39e9dc18ce70194233beec3488106ee1.png
 application.js: application-a9d849fa60289664633f8c7df6c1f9d6.js
-application.css: application-9ba37be3c06fad3d72610b166db9bd71.css
+application.css: application-8b35d7140a85c622bce4da230bc212b0.css
 fontawesome-webfont.eot: fontawesome-webfont-7cf1b0de49e2f8672c9ad6d9e382115f.eot
 fontawesome-webfont.svg: fontawesome-webfont-4d19fdd70a080778557b652cb4868557.svg
 fontawesome-webfont.ttf: fontawesome-webfont-1e29be0bb354c9f664cbca7df9a966d8.ttf
