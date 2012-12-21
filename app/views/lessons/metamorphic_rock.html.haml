@@ -1,0 +1,123 @@
+= stylesheet_link_tag "lesson"
+
+-content_for :content do
+  %h1 Metamorphic Rock
+
+  %p
+    Metamorphic rock results from heat and pressure. This is the least abundant
+    of the 3 groups of rock. During the metamorphism, rock undergoes a change
+    in composition or in the size and arrangement of the mineral grains.
+
+  %h3 Metamorphic Process
+  %ol
+    %li
+      Pressure: results from uplift of mountain building and large intrusive
+      igneous bodies pushing upward.
+    %li
+      Temperature: heat comes from decay of radioactive elements in the mantle
+      and crust border. It also comes from magma chambers.
+
+  %h3 Thermal Metamorphism
+  %p Changes due to heat -- pressure is not a major factor
+
+  = illustration 'metamorphic_rock/schist.jpg', 'Schist'
+
+  %p
+    %strong Recrystallization:
+    enlargement of minerals; The rock has gotten hot enough, not to melt, but
+    to become pliable. In this state, the atoms are able to move around and
+    mineral grains can enlarge (grow).
+
+  = illustration ['metamorphic_rock/garnet_mica_schist.jpg',
+                  'metamorphic_rock/phyllite.jpg'],
+                 'Garnet Mica Schist --- Phyllite'
+
+  %p
+    %strong Foliation:
+    the grains become arranged in parallel layers along which the new rock
+    splits easily. This also happens when the rock is pliable.
+
+  %p
+    Look at the chart below. You will see how one rock type changes to another
+    strictly by having the temperature increase.
+
+  = illustration 'metamorphic_rock/foliation.png'
+
+  = illustration ['metamorphic_rock/slate.jpg',
+                  'metamorphic_rock/gneiss.jpg',
+                  'metamorphic_rock/gray_and_pink_granite.jpg'],
+                 'Slate --- Gneiss --- Gray and Pink Granite',
+                 klass: 'medium'
+
+  %p
+    Other metamorphic rocks are marble and quartizite. Marble was originally
+    the sedimentary rock called limestone and quartzite was sandstone.
+
+  = illustration 'metamorphic_rock/quartzite.jpg', 'Quartzite'
+
+  %h3 Regional Metamorphism
+
+  = illustration 'metamorphic_rock/regional_metamorphism.png', nil, klass: 'wide'
+  %p
+    Most of the metamorphic rock of the Earth's crust is formed by the
+    process of
+    %strong Regional Metamorphism.
+    Regional Metamorphism occurs when large areas of rock are under intense
+    heat and pressure. This process causes them to change form. This occurs
+    during mountain building movements. The pressure on the rocks comes from
+    both the great weight of the overlying rocks and the squeezing pressure of
+    the moving rock masses. Regional metamorphism takes place over very large
+    areas.
+
+  %p
+    %strong Contact Metamorphism
+    is when the hot magma chamber comes into direct contact with the
+    surrounding rock changing it to metamorphic rock.
+
+  %p
+    Pressure squeezes the grains closer together. The squeezing makes the rock more dense and less porous.  Under high temperature and pressure, rocks become pliable like clay. Atoms slide into new positions.  Some minerals line up like toothpicks in a box. This is foliation.
+
+  %p
+    %strong Fissle
+    means layering.
+
+  %p
+    When fluids at high temperatures move through a rock, some
+    %strong ions
+    may be removed from the parent rock. New minerals are formed. This is known as
+    %strong metasomatism.
+
+  %h3
+    Texture
+  %p
+    The size, shape, and the arrangement of grains determines the texture.
+
+  %p
+    Terms for texture:
+  %ul
+    %li
+      %strong Slaty Cleavage:
+      fine grains; like in slate.
+    %li
+      %strong Schistosity:
+      coarse grains; like in schist.
+
+  %p
+    Brittle minerals (quartz &amp; feldspar), when subjected to direct
+    pressure, will be
+    %strong granulated;
+    decrease in grain size; they stretch like a
+    large rubber band.
+
+  = illustration 'metamorphic_rock/granulation.png', nil, klass: 'wide'
+
+  %p With extreme granulation, bands are formed.
+
+  = illustration 'metamorphic_rock/granulation_bands.png', nil, klass: 'wide'
+
+  %h3 Metamorphic Intensity or Rank
+
+  %p
+    The higher the temperature and pressure, the greater the metamorphic
+    change.  Maximum metamorphism occurs close to the center of mountain
+    building; the temperature and pressure are the greatest here.

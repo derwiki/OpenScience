@@ -11,7 +11,7 @@
   <p>Matter: anything that occupies space and has mass</p>
   <%- @sections.zip(['selected']).each do |section, selected| -%>
     <div id="<%= section %>" class="section <%= selected %>">
-      <%= render "lesson/matter/#{section}" %>
+      <%= render "lessons/matter/#{section}" %>
     </div>
   <%- end -%>
   <div id='disqus_thread' />

@@ -1,0 +1,9 @@
+.illustration
+  - image_uris = image_uri.is_a?(String) ? [image_uri] : image_uri
+  - image_uris.each do |image_uri|
+    - if local_assigns[:klass].present?
+      = image_tag image_uri, class: klass
+    - else
+      = image_tag image_uri
+  - if local_assigns[:description].present?
+    .description= description

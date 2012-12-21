@@ -1,42 +1,46 @@
 
-#content {
+.content {
   font-size: 16px;
 }
-#content .section {
+.content .section {
   display: none;
 }
-#content .section.selected {
+.content .section.selected {
   display: block;
 }
-#content .illustration {
+.content .illustration {
   text-align: center;
 }
-#content .illustration div {
+.content .illustration div {
   margin: 20px auto;
 }
-#content .illustration img,
-#content img.illustration {
+.content .illustration img,
+.content img.illustration {
   max-width: 400px;
 }
-#content .illustration .description {
+.content .illustration .description {
   font-size: 14px;
   font-style: italic;
   text-align: center;
   width: 500px;
   margin: 0 auto;
 }
-#content .illustration.wide img,
-#content .illustration.wide {
+.content .illustration.wide img,
+.content .illustration img.wide,
+.content .illustration.wide {
   max-width: 600px;
 }
-#content ol {
+.content .illustration img.medium {
+  max-width: 300px;
+}
+.content ol {
   padding: 10px;
   margin: 10px;
 }
-#content li {
+.content li {
   margin-bottom: 20px;
 }
-#content li span {
+.content li span {
   display: block;
   clear: both;
 }

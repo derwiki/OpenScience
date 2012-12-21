@@ -4,6 +4,11 @@ module LessonHelper
       [(content_tag(:sup, atomic_number) if atomic_number),
        element,
        (content_tag(:sub, atomic_weight) if atomic_weight)].compact),
-      :class => "element-example")
+      class: 'element-example')
+  end
+
+  def illustration(image_uri, description=nil, opts = {})
+    render 'lessons/shared/illustration',
+           opts.merge(image_uri: image_uri, description: description)
   end
 end

@@ -9,7 +9,7 @@
 
   <%- @sections.zip(['selected']).each do |section, selected| -%>
     <div id="<%= section %>" class="section <%= selected %>">
-      <%= render "lesson/electricity/#{section}" %>
+      <%= render "lessons/electricity/#{section}" %>
     </div>
   <%- end -%>
   <div id='disqus_thread' />

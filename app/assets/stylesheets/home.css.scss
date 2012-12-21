@@ -45,4 +45,8 @@
   &.igneous_rock {
     background-image: url(image_path('home/igneous_rock.jpg'));
   }
+
+  &.metamorphic_rock {
+    background-image: url(image_path('home/gneiss.jpg'));
+  }
 }
