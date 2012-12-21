@@ -6,22 +6,19 @@
   %ol
     %li
       Extratropical: means outside the tropics (like the United States)
-      .illustration
-        =image_tag "/assets/weather_atmosphere/high-low-pressure-system.png"
+      = illustration 'weather_atmosphere/high-low-pressure-system.png'
     %li
       Tropical: hurricanes
 
 %h3 Extratropical Storms
 
 %p Thunderstorms, or Cumulonimbus Clouds, are anvil shaped.
-.illustration.wide
-  =image_tag "/assets/weather_atmosphere/cumulonimbus-cloud.png"
-  %a{href: 'http://en.wikipedia.org/wiki/File:Anvil_shaped_cumulus_panorama_edit_crop.jpg'}
-    =image_tag "/assets/weather_atmosphere/anvil-shaped-cumulus-panorama.jpeg"
-  .description
-    image courtesy of Fir0002/Flagstaffotos and the 
-    %a{href: 'http://commons.wikimedia.org/wiki/Commons:GNU_Free_Documentation_License_1.2'}
-      GFDL 1.2 license.
+
+= illustration ['weather_atmosphere/cumulonimbus-cloud.png',
+                'weather_atmosphere/anvil-shaped-cumulus-panorama.jpeg'],
+    link_to('image courtesy of Fir0002/Flagstaffotos and the GFDL 1.2 license',
+      'http://en.wikipedia.org/wiki/File:Anvil_shaped_cumulus_panorama_edit_crop.jpg'),
+    klass: 'wide'
 
 %p
   As warm moist air goes into the cloud, the water vapor condenses into
@@ -35,7 +32,7 @@
   Tornadoes always occur with thunderstorms; they are an intense column of
   rotating air. Wind speed varies between 110 and 300 mph. They're smaller the
   hurricanes but cause more damage.
-  
+
 %p
   Factors for formation of tornadoes:
 %ul
@@ -55,17 +52,17 @@
   The U.S. has more tornadoes then any other country; this is due to its shape
   and the location of mountains. The central plains of the US is called Tornado
   Alley due to large number of tornadoes occurring there. The state with the
-  fewest tornadoes is Rhode Island. This is due to its size. 
+  fewest tornadoes is Rhode Island. This is due to its size.
 
 %h3 Tropical Storms
 %p
   Hurricanes: smaller then extratropical storms but more destructive; they form
-  between 5° and 20° of latitude but will travel to higher latitudes.
-  .illustration
-    %a{href: '/assets/weather_atmosphere/hurricane.png'}
-      =image_tag '/assets/weather_atmosphere/hurricane.png'
-    %a{href: 'http://en.wikipedia.org/wiki/File:Hurricane_profile.svg'}
-      =image_tag '/assets/weather_atmosphere/hurricane-profile.png'
+  between 5° and 20° of latitude but will travel to higher latitude
+  = illustration 'weather_atmosphere/hurricane.png', nil, klass: 'wide'
+  = illustration 'weather_atmosphere/hurricane-profile.png',
+                 link_to('Photocredit: Wikipedia',
+                   'http://en.wikipedia.org/wiki/File:Hurricane_profile.svg'),
+                 klass: 'wide'
 
 %p
   For a hurricane to form, the water temperature must be warm -- around 83°F. The
