@@ -19,9 +19,9 @@
     %li Sedimentary
     %li Metamorphic
 
-  .illustration= image_tag 'igneous_rock/rock_cycle.png'
+  = illustration 'igneous_rock/rock_cycle.png', 'The Rock Cycle', klass: 'wide'
 
-  %p          
+  %p
     After the Igneous rock formed it weathered (eroded) into fragments. The
     fragments eventually became another rock called Sedimentary (formed from a
     sediment)
@@ -69,7 +69,7 @@
     Radioactive rocks are present at the crust-mantle boundary. The
     radioactivity gives enough heat to melt the rock.
 
-  .illustration= image_tag 'igneous_rock/earth_layers.png'
+  = illustration 'igneous_rock/earth_layers.png'
 
   %p
     Magma moves upward along cracks in the crust. If it overflows onto the
@@ -92,9 +92,8 @@
       %li  coarse grains
       %li Example: Granite
 
-    .illustration.igneous
-      = image_tag 'igneous_rock/granite.jpg'
-      .description Grey &amp; Pink granite
+    = illustration 'igneous_rock/granite.jpg', 'Grey and Pink Granite',
+                   klass: 'wide'
 
   %p
     When the magma reaches the Earth's surface as Lava, it cools fast. The atoms
@@ -110,21 +109,18 @@
       %li  small grains or no grains
       %li Example: Obsidian
 
-    .illustration.igneous
-      = image_tag 'igneous_rock/obsidian1.jpg'
-      = image_tag 'igneous_rock/obsidian2.jpg'
-      .description
-        Obsidian and Granite have the same chemical composition, but different textures.
+    = illustration ['igneous_rock/obsidian1.jpg', 'igneous_rock/obsidian2.jpg'],
+      "Obsidian and Granite have the same chemical composition, but different textures."
 
   %p
     %strong Porphyries:
-    .illustration= image_tag 'igneous_rock/porphyries.png'
+    = illustration 'igneous_rock/porphyries.png', nil, klass: 'wide'
     two different textures; two different grain sizes due to cooling rate.  A
     magma chamber may start to cool down and grains begin to form. Then the
     material in the chamber starts to erupt as a volcano. The lava cools fast,
     no grain, but it's mixed with grains that already formed from the magma
     chamber. The resulting rock shows characteristics of both intrusive and
-    extrusive Igneous rocks. 
+    extrusive Igneous rocks.
 
   %p
     %strong Essential Mineral:
@@ -145,20 +141,20 @@
     The size of the fragments vary in size: dust to volcanic bombs (very large)
 
   %p
-    Most of this material owes its transportation to the kick given by the 
+    Most of this material owes its transportation to the kick given by the
     escaping gases at the time of the eruption, and assisted by the wind.
     Such ejecta falls out of the air in order of decreasing size and density.
 
   %p
-    Ejecta deposits decrease in thickness and in grain size away from the vent 
-    of the volcano. The wind will blow the fine material miles or hundreds of 
+    Ejecta deposits decrease in thickness and in grain size away from the vent
+    of the volcano. The wind will blow the fine material miles or hundreds of
     miles from the volcano. The heavy material can't travel as far.
 
   %h3 3 Type of Volcanoes
   %ol
     %li
       %strong Cinder Cone
-      .illustration= image_tag 'igneous_rock/cinder_cone.png'
+      = illustration 'igneous_rock/cinder_cone.png', nil, klass: 'wide'
       %p
         This type of volcano has a thick lava due to the high amount of silica
         (quartz) in it. The lava is thrown high into the air. As it fall, it
@@ -168,7 +164,7 @@
 
     %li
       %strong Shield Volcano
-      .illustration= image_tag 'igneous_rock/shield_volcano.png'
+      = illustration 'igneous_rock/shield_volcano.png', nil, klass: 'wide'
       %p
         The Shield Volcano is also known as the Hawaiian Volcano. The Hawaiian
         Islands are all Shield Volcanoes. The lava is called Basic lava since it
@@ -178,7 +174,7 @@
 
     %li
       %strong Strato Volcano
-      = image_tag 'igneous_rock/strato_volcano.png'
+      = illustration 'igneous_rock/strato_volcano.png', nil, klass: 'wide'
       %p
         High and Steep.  Made up of alternate layers of lava that was thrown up
         into the air, which solidifies before it hits the ground, and lava that
@@ -195,8 +191,9 @@
         %li cools fast
     %li
       %strong Pahoehoe
-      .illustration= link_to image_tag('igneous_rock/pahoehoe.jpg'),
-                        'http://en.wikipedia.org/wiki/File:PahoehoeLava.jpg'
+      = illustration 'igneous_rock/pahoehoe.jpg',
+          link_to('Photocredit: Wikipedia',
+                  'http://en.wikipedia.org/wiki/File:PahoehoeLava.jpg')
       %ul
         %li Basic lava (low silica content)
         %li cools slowly
@@ -222,9 +219,9 @@
         %li Volcanic glass Lava that has cooled fast
     %li
       %strong Pillow Lava
-      .illustration
-        = link_to image_tag('igneous_rock/pillow_lava_picture.jpg'),
-                  'http://en.wikipedia.org/wiki/File:Nur05018.jpg'
+      = illustration 'igneous_rock/pillow_lava_picture.jpg',
+          link_to('Photocredit: Wikipedia',
+                  'http://en.wikipedia.org/wiki/File:Nur05018.jpg')
       %ul
         %li
           Formed when the volcano erupts under water. Blobs of lava roll down
@@ -266,9 +263,9 @@
 
     %li
       %strong El Chichon
-      .illustration
-        = link_to image_tag('igneous_rock/el_chichon.jpg'),
-                  'http://en.wikipedia.org/wiki/File:El_Chich%C3%B3n.jpg'
+      = illustration 'igneous_rock/el_chichon.jpg',
+          link_to('Photocredit: Wikipedia',
+                  'http://en.wikipedia.org/wiki/File:El_Chich%C3%B3n.jpg')
       %ul
         %li Erupted in April 1982
         %li Killed 2,000  people
@@ -277,9 +274,9 @@
 
     %li
       %strong Mt. Pinatubo
-      .illustration
-        = link_to image_tag('igneous_rock/mount_pinatubo.jpg'),
-                  'http://en.wikipedia.org/wiki/File:Pinatubo91eruption_clark_air_base.jpg'
+      = illustration 'igneous_rock/mount_pinatubo.jpg',
+          link_to('Photocredit: Wikipedia',
+                  'http://en.wikipedia.org/wiki/File:Pinatubo91eruption_clark_air_base.jpg')
       %ul
         %li Erupted in June 1991
         %li Located in the Philippines
@@ -292,9 +289,9 @@
 
   %p This cloud forms at night and quietly flows down the side of the volcano.
 
-  .illustration
-    = link_to image_tag('igneous_rock/nuee_ardente.jpg'),
-              'http://en.wikipedia.org/wiki/File:Pyroclastic_flows_at_Mayon_Volcano.jpg'
+  = illustration 'igneous_rock/nuee_ardente.jpg',
+      link_to('Photocredit: Wikipedia',
+              'http://en.wikipedia.org/wiki/File:Pyroclastic_flows_at_Mayon_Volcano.jpg')
 
   %p
     Many towns and villages are built at the foot of the volcano. They are at
@@ -306,7 +303,7 @@
     density is high enough that the cloud can not rise but slides down the side
     of the volcano. As it moves through the village, and due to its great
     density, it pushes all of the air out of the village. The villagers
-    suffocate. 
+    suffocate.
 
   %p The Nuee Ardente is one of the most deadly things associated with a volcano.
 
@@ -331,8 +328,7 @@
     In a chamber of magma all of the minerals do not crystallize out at the same
     time. The order of crystallization is called the Bowen's Reaction Series.
 
-  .illustration
-    = image_tag 'igneous_rock/bowens_reaction_series.png'
+  = illustration 'igneous_rock/bowens_reaction_series.png'
 
   %p
     Think of the magma chamber initially as being made up only of quartz. All
