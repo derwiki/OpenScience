@@ -1,4 +1,3 @@
-
 .nav .homebox {
   width: 350px;
   height: 350px;
@@ -49,4 +48,8 @@
   &.metamorphic_rock {
     background-image: url(image_path('home/gneiss.jpg'));
   }
+}
+
+.header-inner {
+  color: #eee;
 }
