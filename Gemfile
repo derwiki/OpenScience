@@ -4,13 +4,13 @@ gem 'haml', '3.1.7'
 gem 'jquery-rails', '~> 2.1.4'
 gem 'json'
 gem 'less-rails'
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 gem 'thin'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 group :development do
   gem 'sqlite3'
-  gem 'therubyracer', '0.11.0beta6'
+  gem 'therubyracer'
 end
 
 # Gems used only for assets and not required
@@ -23,5 +23,5 @@ end
 
 group :production do
   gem 'pg'
-  gem 'therubyracer', '0.11.0beta6'
+  gem 'therubyracer'#, '0.11.0beta6'
 end
