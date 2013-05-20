@@ -43,3 +43,15 @@
 .content {
   padding-top: 10px;
 }
+.well.sidebar-nav {
+  position: fixed;
+  right: 20px;
+  top: 165px;
+
+  ul {
+    margin-top: 0;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
