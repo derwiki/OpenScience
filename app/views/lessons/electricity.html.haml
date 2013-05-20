@@ -1,0 +1,16 @@
+= javascript_include_tag "lesson"
+= stylesheet_link_tag "lesson"
+- content_for :content do
+  %h1 Electricity
+  .foreward
+    These notes and lesson plans are designed to be used for grades 5 – 8.
+  - @sections.zip(['selected']).each do |section, selected|
+    %div{:class => "section #{selected}", :id => section}
+      = render "lessons/electricity/#{section}"
+  #disqus_thread
+- content_for :toc do
+  %ul#section-picker
+    - @sections.each do |section|
+      %li= link_to section.titleize, "#", :"data-section-id" => section
+    %li
+      %a.showall{:href => "#"} Show All Sections
