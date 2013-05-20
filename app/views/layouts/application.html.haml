@@ -40,18 +40,9 @@
             &middot;
             %li= link_to "Authors", "/authors"
       .row-fluid.content
-        .span11.clearfix
+        .span10
           = yield :content
-      - unless (toc = yield :toc).blank?
-        .span2
-          .well.sidebar-nav
+        - if (toc = yield :toc).present?
+          .span2.well.sidebar-nav
             = yield :toc
-          / /.well
-        / /span
-      / /row
-    / /container
-    /
-      Javascripts
-      \==================================================
-    / Placed at the end of the document so the pages load faster
     = javascript_include_tag "application"

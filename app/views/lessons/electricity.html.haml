@@ -7,7 +7,6 @@
   - @sections.zip(['selected']).each do |section, selected|
     %div{:class => "section #{selected}", :id => section}
       = render "lessons/electricity/#{section}"
-  #disqus_thread
 - content_for :toc do
   %ul#section-picker
     - @sections.each do |section|
